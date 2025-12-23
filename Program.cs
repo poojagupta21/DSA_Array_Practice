@@ -5,7 +5,7 @@ class Program
     public static void Main()
     {
         int[] arr = [10, 20, 30, 5, 50, 90, 100, 110];
-        int[] arr1 = [1,1, 2, 2, 3, 4, 4, 4, 5, 5];
+        int[] arr1 = [1, 1, 2, 2, 3, 4, 4, 4, 5, 5];
 
 
         Console.WriteLine("helloe");
@@ -31,20 +31,22 @@ class Program
             Console.WriteLine(arr1[i] + " ");
         }
 
-        int []arr2 = {1, 2, 3}; 
+        int[] arr2 = { 1, 2, 3 };
         SubArrays.printSubArrays(arr2, 0, 0);
 
-        int[] reverse = {2,3,3,1,9,4,5};
-        ReverseArray2.reverse(reverse,0,reverse.Length-1);
-        foreach(var r in reverse){
-            Console.Write(r +",");
+        int[] reverse = { 2, 3, 3, 1, 9, 4, 5 };
+        ReverseArray2.reverse(reverse, 0, reverse.Length - 1);
+        foreach (var r in reverse)
+        {
+            Console.Write(r + ",");
         }
 
         Console.WriteLine();
 
-        int[] rotate = {1,2,3,4,5,6};
+        int[] rotate = { 1, 2, 3, 4, 5, 6 };
         RotateArray.Rotate(rotate, 2);
-        foreach(var r in rotate){
+        foreach (var r in rotate)
+        {
             Console.Write(r + ",");
         }
     }
